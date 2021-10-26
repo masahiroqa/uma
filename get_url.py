@@ -6,7 +6,7 @@ now_datetime = datetime.datetime.now(pytz.timezone('Asia/Tokyo'))
 import re
 import os
 from os import path
-OWN_PATH_NAME = path.splitext(path.basename(__file__))
+OWN_FILE_NAME = path.splitext(path.basename(__file__))
 RACE_URL_DIR = "race_URL"
 
 import logging
