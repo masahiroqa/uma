@@ -1,3 +1,7 @@
+# original directory
+race_url/
+logfile/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
