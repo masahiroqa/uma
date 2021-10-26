@@ -30,7 +30,7 @@ def get_race_url():
     driver = webdriver.Chrome(options=options)
     driver.implicitly_wait(10)
     
-    for year in range(2000, now_datetime.year):
+    for year in range(2000, now_datetime.year+1):
         for month in range(1, 13):
             race_url_file = RACE_URL_DIR + "/" + str(year) + "-" + str(month) + ".txt"
             if not os.path.isfile(race_url_file):
