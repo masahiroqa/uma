@@ -30,7 +30,7 @@ def get_race_html_by_year_and_mon(year, month):
     with open(RACR_URL_DIR+"/"+str(year)+"-"+str(month)+".txt", "r") as f:
         save_dir = RACR_HTML_DIR+"/"+str(year)+"/"+str(month)
         my_makedirs(save_dir)
-        urls = f.read().splitlines
+        urls = f.read().splitlines()
 
         file_list = os.listdir(save_dir)
 
