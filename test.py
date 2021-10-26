@@ -1,4 +1,5 @@
 from get_url import OWN_FILE_NAME, get_race_url
+from get_html import get_race_html
 
 import sys
 import traceback
@@ -13,7 +14,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 def update():
-    get_race_url()
+    get_race_html()
 
 if __name__ == '__main__':
     try:
