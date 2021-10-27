@@ -75,7 +75,7 @@ horse_data_columns=[
 ]
 
 def make_csv_from_html():
-    for year in range(2008, now_datetime+1):
+    for year in range(2008, now_datetime.year+1):
         make_csv_from_html_by_year(year)
 
 def make_csv_from_html_by_year(year):
