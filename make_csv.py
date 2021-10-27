@@ -140,7 +140,7 @@ def get_rade_and_horse_data_by_html(race_id, html):
     pay_back_tables =  soup.findAll("table", class_="pay_table_01")
 
     pay_back1 = pay_back_tables[0].findAll('tr')
-    race_list.append(pay_back1[0].find("td", class_="txt_r")).get_text() #tansyo
+    race_list.append(pay_back1[0].find("td", class_="txt_r").get_text()) #tansyo
     hukuren = pay_back1[1].find("td", class_="txt_r")
     tmp =  []
     for string in hukuren.strings:
