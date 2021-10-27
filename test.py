@@ -1,5 +1,6 @@
 from get_url import OWN_FILE_NAME, get_race_url
 from get_html import get_race_html
+from make_csv import make_csv_from_html
 
 import sys
 import traceback
@@ -14,7 +15,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 def update():
-    get_race_html()
+    make_csv_from_html()
 
 if __name__ == '__main__':
     try:
