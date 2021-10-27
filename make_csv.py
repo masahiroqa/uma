@@ -88,7 +88,7 @@ def make_csv_from_html_by_year(year):
         total = 0
         for month in range (1,13):
             html_dir = RACR_HTML_DIR+"/"+str(year)+"/"+str(month)
-            if os.path.isfile(html_dir):
+            if os.path.isdir(html_dir):
                 file_list = os.listdir(html_dir)
                 total += len(file_list)
                 logger.info(" appending " + str(len(file_list)) + " datas to csv (" + str(year)  +" "+ str(month)+ ")")
